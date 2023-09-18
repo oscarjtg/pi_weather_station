@@ -25,7 +25,7 @@ When asked to connect to a wifi network, connect to your mobile hotspot.
 
 This is required so that we can have multiple pis on the same local network.
 
-See change_hostname.md, or below:
+See `change_hostname.md`, or below:
 
 ```
 sudo hostname new-hostname
@@ -42,15 +42,15 @@ Plug raspberry pi into a monitor and enable SSH.
 To do this, type the following into a terminal [1]
 
 ```
-pi@raspberrypi$ sudo raspi-config 
+sudo raspi-config 
 ```
 
 and navigate through the pop-up menu as follows
 
 ```
->>>Interface Options
->>>SSH
->>>ENABLE
+>>> Interface Options
+>>> SSH
+>>> YES
 ```
 
 ## Step 5: ssh from your computer
@@ -58,7 +58,7 @@ and navigate through the pop-up menu as follows
 Check the pi can be identified on the network:
 
 ```
-ping pi@new-hostname.local
+ping new-hostname.local
 ```
 
 ssh into the pi:
@@ -72,6 +72,32 @@ followed by typing in the password `raspberry`.
 If you chose a username other than pi 
 (for consistency with the existing pis, this is not recommended)
 replace `pi` with the `username` in the commands above.
+
+## Step 6: copy files
+
+Make directories
+
+```
+mkdir pi_weather_station
+cd pi_weather_station
+mkdir data
+```
+
+Exit the ssh by typing 
+
+```
+exit
+```
+
+then copy `weatherstations.py` into the `pi_weather_station` directory using the `scp` command
+
+```
+scp ./weatherstation.py pi@new-hostname.local:/home/pi/pi_weather_station/weatherstation.py
+```
+
+and enter the password `raspberry` when prompted.
+
+In `weatherstation.py`, change `codename` to whatever the hostname is.
 
 
 ## References
