@@ -35,6 +35,9 @@ sudo nano /etc/hosts
 sudo systemctl reboot
 ```
 
+Turn your mobile hotspot off and on again.
+
+
 ## Step 4: enable SSH
 
 Plug raspberry pi into a monitor and enable SSH.

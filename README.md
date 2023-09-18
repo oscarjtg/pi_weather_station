@@ -129,8 +129,9 @@ You find the username and address in the following table
 
 | Pi name | user name | address | password |
 | - | - | - | - |
-| summer | pi | summer.local | raspberry |
 | spring | pi | spring.local | raspberry |
+| summer | pi | summer.local | raspberry |
+| autumn | pi | autumn.local | raspberry |
 | mulberry | pi | mulberrypi.local | raspberry |
 | strawberry | pi | strawberrypi.local | raspberry |
 
