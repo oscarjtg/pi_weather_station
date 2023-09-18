@@ -22,7 +22,7 @@ change the name again in
 
 Reboot the system
 
-sudo systemctl reboot
+```sudo systemctl reboot```
 
 
 
