@@ -2,16 +2,19 @@
 
 ![image](https://user-images.githubusercontent.com/25530332/192252861-2d898804-bf3b-4320-9dc0-1399f69e9c74.png)
 
-The aim of this project is to build an automated weather station that you can
-deploy in Wytham Woods, and that will automatically record
-temperature, wind speed and rainfall, ready for analysis.
-The measurement devices are connected to a Raspberry Pi mini-computer, such that
-the weather station is (with a power bank) fully autonomous and can be left outside
-for as long as the power bank lasts.
+The aim of this project is to build a weather station,
+deploy it in Wytham Woods, 
+and analyse the results collected over a couple of days of deployment.
+The measurement devices 
+(wind vane and anemometer; rain sensor; temperature sensor) 
+are connected to a Raspberry Pi mini-computer 
+that is programmed to record measurements at regular time intervals, 
+such that the weather station can operate autonomously 
+until the power bank is depleted.
 
-The project has two parts
-- assembling and wiring up the three sensors
-- customising the Python script on the Raspberry Pi that will monitor the sensors
+The project has two parts:
+- [1] assembling and wiring up the three sensors, and
+- [2] customising the Python script on the Raspberry Pi that will monitor the sensors.
 
 These parts can be done largely in parallel, so it might be sensible to split up into two smaller groups.
 
