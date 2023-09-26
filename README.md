@@ -13,8 +13,8 @@ such that the weather station can operate autonomously
 until the power bank is depleted.
 
 The project has two parts:
-- [1] assembling and wiring up the three sensors, and
-- [2] customising the Python script on the Raspberry Pi that will monitor the sensors.
+1. assembling and wiring up the three sensors, and
+2. customising the Python script on the Raspberry Pi that will monitor the sensors.
 
 These parts can be done largely in parallel, so it might be sensible to split up into two smaller groups.
 
@@ -36,8 +36,8 @@ These parts can be done largely in parallel, so it might be sensible to split up
 
 ## Part 1: Hardware
 
-Your final weather station will have three operational sensors, a thermometer, an
-anemometer (wind speed sensor) and a rain gauge. Some anemometers require the weather
+Your final weather station will have four operational sensors: a thermometer, an
+anemometer (wind speed sensor), a weather vane, and a rain gauge. Some anemometers require the weather
 vane to be connected to the Raspberry Pi, others work independent of the weather vane.
 
 ### Step 1: Prepare the sensor cables
